@@ -12,3 +12,17 @@
 
 //https://madbernard.dreamwidth.org/2110.html
 //http://www.usflag.org/flag.specs.html
+
+// how to do this:
+// create many small functions
+// put all the vars at the top
+// store the best fits in an array that I look up before re-running that query...  memoize?  Object?
+// yes, store in object with key as the input number of states and value as the best pattern
+
+// function that is for even numbers of rows
+// function that is for any numbers of rows
+// function that adds above functions
+
+var unionSize = 7/13 / 0.76;
+
+// add some helper functions
