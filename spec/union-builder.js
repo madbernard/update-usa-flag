@@ -1,5 +1,12 @@
 /* global union-builder, describe, it, expect, should */
 
+// test only user-facing stuff
+
+// it accepts user input
+// that input is a number
+
+// it returns a description of a union, rows and columns
+
 describe('union-builder()', function () {
   'use strict';
 
