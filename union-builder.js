@@ -27,6 +27,7 @@
   //   push columns: i, rows: math.floor (num/i)
 
 // above should get us all the multiples that come in under num?
+/*
  maybe better to just get all numbers that multiplied together come in under num
  recursion
 
@@ -35,11 +36,28 @@
  then for each total see if there is another total that combined add up to num
  and see if those fit the bill
  ie see that the wider set of rows is an even #
+ if num is prime, ie if no "total" key === num
+ we're going to have to throw out the symmetry requirement
+ http://www.usflag.org/the.31.star.flag.html
+ http://www.usflag.org/the.43.star.flag.html
+ One of the rows will be 1 longer or 1 shorter
+ Find totals of + or - 1
 
+ result will be columns in part a plus columns in part b,
+*/
 
 // function that is for any numbers of rows
 // function that adds above functions
 
-var unionSize = 7/13 / 0.76;
+// In the USA flag, 1 equals the total length of the hoist,
+// which is the shorter side of the flag, where it has grommets to raise it on a pole
 
+var hoistLengthUSA = 7/13;
+var flyLengthUSA = 0.76;
+
+function unionSize (hoistLength, flyLength) {
+  return hoistLength / flyLength;
+}
+
+var unionSizeUSA = unionSize(hoistLengthUSA, flyLengthUSA);
 // add some helper functions
